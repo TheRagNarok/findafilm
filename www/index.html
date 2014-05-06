@@ -24,9 +24,14 @@
     
     <script src='js/films.js'></script>
     
-    <script type="text/javascript">	
+    <script type="text/javascript">
 		$(document).ready(onDeviceReady);
 	</script>
+
+
+
+
+
 
 </head>
 
@@ -101,8 +106,7 @@
 </script>
  
 
-<div data-role="page" data-theme="a">
-   
+<div data-role="page" data-theme="a"> 
     <div data-role="header" data-position="inline">
         <h1>FindAFilm</h1>
     </div>   
@@ -113,13 +117,14 @@
 </div>
 
 <script>
-var filtered = items;
-var selected;
+
 
 <!----------------------------------- create main ractive(filmdb) View ---------------------------------->
 
 function setUpRactive(){
 	alert("setupractive");
+	var filtered = items;
+	
 	filmdb = new Ractive({
 	
   el: 'output',
@@ -140,7 +145,7 @@ genre2: "select",
   }
   
 });
-
+ractive.update()
 
 var one = "select";
 var two = "select";
