@@ -35,8 +35,6 @@ else {
 	
 }
 
-
-
 <!-----------------------------------digits only js ------------------------------------------------------->
 $(document).ready(function () {
   //called when key is pressed in textbox

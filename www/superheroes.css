@@ -1,3 +1,7 @@
+[contentEditable=true]:empty:not(:focus):before{
+        content:attr(data-ph)
+    }
+
 body { 
   margin: 0; 
   padding: 0; 
