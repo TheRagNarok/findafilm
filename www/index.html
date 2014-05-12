@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FindAFilm</title>
     
-<script src='js/Ractive.js'></script>   
+<script src='js/Ractive.js'></script> 
+
+<script type="text/javascript">
+document.addEventListener("deviceready", onDeviceReady, false);
+
+function onDeviceReady() {
+	alert("onDeviceReady Called");
+	ractivego();
+}
+</script>  
 </head>
 
 <body>
@@ -16,11 +25,13 @@
 </script>
 </div>
 <script>
+function ractivego() {
 var ractive = new Ractive({
   el: output,
   template: '#template',
   data: { greeting: 'Hello', recipient: 'world' }
 });
+}
 </script>
 </body>
 </html>
