@@ -112,8 +112,8 @@
     
     <div>
     	
-    	<div contentEditable=true data-ph="Content Placeholder" id='output' data-role="content" data-position="inline">
-        <button onClick="filmdb.update()">update ractive</button></div>
+    	<div contentEditable=false data-ph="Content Placeholder" id='output' data-role="content" data-position="inline">
+        <button onClick="blah()">update ractive</button></div>
     </div>
 </div>
 
@@ -248,7 +248,8 @@ var two = "select";
 		
 		
 	});
-	filmdb.update()
+	function blah() {
+	filmdb.update();}
 }
 </script>
 
