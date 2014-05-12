@@ -11,13 +11,13 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     
 <!-----------------------------------Jquery css ----------------------------------------------------->   
-<!--    <link rel="stylesheet" href="themes/fafstyle.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />-->
+   <link rel="stylesheet" href="themes/fafstyle.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
 
 <!-----------------------------------Jquery Javascript ----------------------------------------------------->
 
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<!--<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>-->
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 
     <script src='js/Ractive.js'></script>   
     <!--<script src='js/Ractive-events-tap.js'></script>
@@ -41,7 +41,7 @@
 <script id='appView' type='text/ractive'>
 			
 <!----------------------------------- Add form ------------------------------------------------------->
-
+<div id="output">
 <label><input value='{{fTitle}}'placeholder="Enter film title"></label>
 <label><input  type="text" name="yearInput" id="yearInput" maxlength="4" value='{{fYear}}'placeholder="Enter film year"></label>
 <span id="errmsg"></span>
@@ -51,7 +51,7 @@
 		<button on-tap='add:{{fTitle}},{{fYear}}'>Add</button>
 		<button on-tap='reset'>Reset</button>
 	</div>
-			
+	</div>		
 <!----------------------------------- genrePad ------------------------------------------------------->			
 			
 			 <div id="container">
