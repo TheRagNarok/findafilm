@@ -41,7 +41,7 @@
 <script id='appView' type='text/ractive'>
 			
 <!----------------------------------- Add form ------------------------------------------------------->
-<div id="output">
+
 <label><input value='{{fTitle}}'placeholder="Enter film title"></label>
 <label><input  type="text" name="yearInput" id="yearInput" maxlength="4" value='{{fYear}}'placeholder="Enter film year"></label>
 <span id="errmsg"></span>
@@ -51,7 +51,7 @@
 		<button on-tap='add:{{fTitle}},{{fYear}}'>Add</button>
 		<button on-tap='reset'>Reset</button>
 	</div>
-	</div>		
+		
 <!----------------------------------- genrePad ------------------------------------------------------->			
 			
 			 <div id="container">
@@ -105,7 +105,7 @@
 </script>
  
 
-<div data-role="page" data-theme="a"> 
+<div data-role="page" id="one" data-theme="a"> 
     <div data-role="header" data-position="inline">
         <h1>FindAFilm</h1>
     </div>   
@@ -114,8 +114,17 @@
     	
     	<div contentEditable=false data-ph="Content Placeholder" id='output' data-role="content" data-position="inline">
         <button onClick="blah()">update ractive</button></div>
+        <a href="#two">page two</a>
     </div>
 </div>
+<div data-role="page" id="two" data-theme="a"> 
+<div data-role="header" data-position="inline">
+        <h1>FindAFilm</h1>
+    </div> 
+    <div contentEditable=false data-ph="Content Placeholder" id='output' data-role="content" data-position="inline">
+    <a href="#one">page one</a>
+</div>
+
 
 <script>
 
@@ -151,7 +160,7 @@ var two = "select";
 
 <!----------------------------------- ractive(filmdb) events Model -------------------------------------->
 
-	/*filmdb.on( {
+	filmdb.on( {
 		
 <!----------------------------------- genrePad select --------------------------------------------------->
 		select: function (event, id){
@@ -247,7 +256,7 @@ var two = "select";
 		}
 		
 		
-	});*/
+	});
 	function blah() {
 		alert("blah");
 	filmdb.update();}
