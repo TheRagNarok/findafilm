@@ -18,7 +18,7 @@ var films = [
     { genreA:'Horror', genreB:'Mystery',title: 'Harry Potter and the Deathly Hallows – Part 2', year: '2011', fave: 'z'}
 ];
 
-document.addEventListener("deviceready", onDeviceReady, false);
+/*document.addEventListener("deviceready", onDeviceReady, false);
 
 function onDeviceReady() {
 	alert("onDeviceReady Called");
@@ -33,7 +33,7 @@ if (window.localStorage.getItem("first") === null )
 else {
 	items = JSON.parse(window.localStorage.getItem("filmstore"));
 	
-}
+}*/
 
 <!-----------------------------------digits only js ------------------------------------------------------->
 $(document).ready(function () {
@@ -49,7 +49,7 @@ $(document).ready(function () {
 });
 
 setUpRactive();
-}
+
 
 
 
