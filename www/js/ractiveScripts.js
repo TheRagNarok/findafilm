@@ -1,5 +1,5 @@
 
-function ractiveSetup(){
+
 
 if (window.localStorage.getItem("first") === null )
  {
@@ -229,4 +229,3 @@ genre2: "select",
   }
   });
   
-}
